@@ -1,8 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\DemoController;
-
+use Inertia\Inertia;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,8 +13,4 @@ use App\Http\Controllers\DemoController;
 |
 */
 
-Route::get('/', function(){
-    return redirect()->to('demo');
-});
-
-Route::resource('/demo', DemoController::class);
+Route::inertia('/', 'Welcome/Index');

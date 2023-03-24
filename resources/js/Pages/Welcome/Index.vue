@@ -1,23 +1,44 @@
-<script setup>
-    import anime from 'animejs/lib/anime.es.js';
-    let message = 'Welcome To My Portfolio';
 
-    message = message.replace(/\S/g, "<span>$&</span>");    
-    anime.timeline({
-        loop: true,
-    })
-
-    .add({
-        targets: '.text span',
-        translateY: [-600, 0],
-    })
-</script>
 
 <template>
     <section>
         <h1 class="text" v-html="message"></h1>
     </section>
 </template>
+
+<script setup>
+    import anime from 'animejs/lib/anime.es.js';  
+    import { onMounted } from 'vue';
+
+    let message = 'Welcome To My Portfolio';
+    
+    message = message.replace(/\S/g, "<span>$&</span>");    
+
+    onMounted(() => {
+        anime.timeline({
+            loop: false,
+        }).add({
+            targets: '.text span',
+            translateY: [-600, 0],
+            scale: [10, 1],
+            opacity: [0, 1],
+            easing: 'easeOutExpo',
+            duration: 1500,
+            delay: anime.stagger(100),
+        }).add({
+            targets: '.text span',
+            translateX: [0, -1000],
+            scale: [1, 1],
+            opacity: [0],
+            easing: 'easeOutExpo',
+            duration: 1500,
+            delay: anime.stagger(100),
+        })
+    })
+
+
+   
+</script>
 
 <style lang="scss">
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');

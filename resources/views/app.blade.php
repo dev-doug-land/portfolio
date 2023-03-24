@@ -8,5 +8,9 @@
   </head>
   <body>
     @inertia
+    <script src="{{ asset('scripts/anime.min.js') }}"></script>
+
+    {{-- <script src="scripts/anime.min.js"></script> --}}
   </body>
 </html>
+
