@@ -1,14 +1,7 @@
-
-
-<template>
-    <section>
-        <h1 class="text" v-html="message"></h1>
-    </section>
-</template>
-
 <script setup>
     import anime from 'animejs/lib/anime.es.js';  
     import { onMounted } from 'vue';
+    import { router } from '@inertiajs/vue3'
 
     let message = 'Welcome To My Portfolio';
     
@@ -33,16 +26,22 @@
             easing: 'easeOutExpo',
             duration: 1500,
             delay: anime.stagger(100),
+            complete: (anim) => {
+                router.get('/home');
+            }
         })
-    })
-
-
-   
+    })   
 </script>
 
-<style lang="scss">
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+<template>
+    <section>
+        <h1 class="text" v-html="message"></h1>
+    </section>
+</template>
 
+
+
+<style lang="scss">
     *{
         margin: 0;
         padding: 0;

@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Inertia\Inertia;
+use App\Http\Controllers\HomeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,3 +14,5 @@ use Inertia\Inertia;
 */
 
 Route::inertia('/', 'Welcome/Index');
+Route::resource('/home', HomeController::class);
+
