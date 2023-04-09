@@ -36,12 +36,14 @@
 </script>
 
 <template>
-  <div id="background" class="flex justify-center items-center">
-    <img id="compass" src="images/compass.svg" alt="Compass image">
-    <div id="needle" class="">
-      <!-- i need create the needle with css border -->
-      <div id="red-tip"></div>
-      <div id="black-tip"></div>
+  <div>
+    <div id="background" class="flex justify-center items-center">
+      <img id="compass" src="images/compass.svg" alt="Compass image">
+      <div id="needle">
+        <!-- i need create the needle with css border -->
+        <div id="red-tip"></div>
+        <div id="black-tip"></div>
+      </div>
     </div>
   </div>
 </template>
@@ -53,9 +55,9 @@
       position: relative;
       margin: 0;
       padding: 0;
+      max-width: 25vw;
       #compass{
         max-width: 12rem;
-        max-height: 12rem;
         border: 0.15rem solid black;
         border-radius: 50%;
         padding: 1rem;
@@ -63,8 +65,12 @@
       }
       #needle{
         position: absolute;
-        left: calc(12rem / 2 - 0.4rem);
-        top: 1rem;
+        // left: calc(12rem / 2 - 0.4rem);
+        // left: 50%;
+        // top: 50%;
+        // transform: translate(-50%,-50%);
+        // left: 46.5%;
+        // transform: translate(-46.5%, -12.8%);
         #red-tip{
           width: 0;
           height: 0;
