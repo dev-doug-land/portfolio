@@ -4,7 +4,7 @@ This portfolio is using LIVT (Laravel, InertiaJS, Vue.JS, TailwindCSS), in addic
 
 To test it, execute those commands:
 
-npm run dev
-php artisan serve
+> npm run dev <br>
+> php artisan serve
 
 So, the project will be available on http://localhost:8000/
