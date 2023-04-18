@@ -17,7 +17,7 @@ execute those commands:
 
 > composer update <br>
 > php artisan key:generate <br>
-> php artisan serve
+> php artisan serve <br>
 > npm install <br>
 > npm run dev <br>
 
