@@ -18,7 +18,7 @@ import Compass from '../Components/Compass.vue';
 
 <template>
     <div class="grid h-screen">
-        <Link :href="'/home'" class="grid col-span-12 h-[calc(100vh/3)] lg:text-6xl 2xl:text-9xl xl:text-8xl md:text-6xl sm:text-4x1 text-[#FFEDE6] ease-in duration-300 hover:text-[#B4F58E] place-content-center">About me</Link>
+        <Link :href="'/about'" class="grid col-span-12 h-[calc(100vh/3)] lg:text-6xl 2xl:text-9xl xl:text-8xl md:text-6xl sm:text-4x1 text-[#FFEDE6] ease-in duration-300 hover:text-[#B4F58E] place-content-center">About me</Link>
         <div class="grid grid-cols-12 w-[100vw]">
             <Link :href="'/home'" class="grid col-span-5 h-[calc(100vh/3)] lg:text-6xl 2xl:text-9xl xl:text-8xl md:text-6xl sm:text-4x1 text-[#FFEDE6] ease-in duration-300 hover:text-[#9AD3F5] place-content-center">Projects</Link>
             <Compass class="grid col-span-2 place-content-center"/>
