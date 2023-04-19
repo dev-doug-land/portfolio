@@ -19,9 +19,9 @@ import NavBar from '../Components/Navbar.vue';
 
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
-  #app{
+  .content{
     display: flex;
     min-height: calc(100vh - 3.375rem);
     .bg-photo{
