@@ -2,13 +2,11 @@
   <NavBar :isOnSectionPage="true" />
   <div class="content flex justify-around items-center relative top-[3.375rem]">
     <div class="bg-photo">
-      <img src="images/profile-photo.jpeg" alt="profile-photo" class="photo">
+      <img src="images/profile-photo-edited.jpeg" alt="profile-photo" class="photo">
     </div>
-    <div class="description relative top-[3.375rem]">
+    <div class="description">
       <p>
-        Desenvolvedor Full Stack, especializado em LIVT (Laravel, InertiaJS, Vue.JS, TailwindCSS). 
-
-Um ano de experiência em Laravel e Vue.JS, desenvolvendo soluções e modelos de acordo com o esperado do cliente, criando e modificando funcionalidades no principal sistema, de gestão turística. Também possuo experiência com CakePHP no desenvolvimento de um blog.
+        Desenvolvedor Full Stack, especializado em LIVT (Laravel, InertiaJS, Vue.JS, TailwindCSS). Um ano de experiência em Laravel e Vue.JS, desenvolvendo soluções e modelos de acordo com o esperado do cliente, criando e modificando funcionalidades no principal sistema, de gestão turística. Também possuo experiência com CakePHP no desenvolvimento de um blog.
       </p>
     </div>
   </div>
@@ -26,6 +24,7 @@ import NavBar from '../Components/Navbar.vue';
     min-height: calc(100vh - 3.375rem);
     .bg-photo{
     width: 50vw;
+    height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,7 +42,7 @@ import NavBar from '../Components/Navbar.vue';
         color: #FFF;
         text-align: justify;
         padding: 0px 2rem 0px;
-        text-shadow: 2px 2px gray;
+        text-shadow: 2px 2px rgba(173, 173, 173, 0.6);
       }
     }
   }
