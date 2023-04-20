@@ -1,14 +1,9 @@
 <script setup>
     import { Link } from "@inertiajs/vue3";
-
-    defineProps({
-        isOnSectionPage: Boolean,
-    })
-
 </script>
 
 <template>
-    <nav v-if="isOnSectionPage" class="md:px-16 sm:px-8 flex justify-between w-[100vw] max-h-[3.375rem]">
+    <nav class="md:px-16 sm:px-8 flex justify-between w-[100vw] max-h-[3.375rem]">
         <Link :href="'/home'" class="flex justify-center rounded-lg w-[15vw] min-w-[230px] transition rounded-lg hover:scale-110 hover:bg-[#806533] duration-300 hover:translate-y-2 " >
             <img src="images/logo.png" class="hover:invert max-w-[158px] min-w-[158px] max-h-[53px] min-h-[53px]" alt="Logo site">
         </Link>
@@ -23,6 +18,7 @@
 
 
 <style lang="scss" scoped>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
     nav{
         position: fixed;

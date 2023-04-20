@@ -1,5 +1,7 @@
 <template>
-  <NavBar :isOnSectionPage="true" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+
+  <NavBar />
   <div class="content flex justify-around items-center relative top-[3.375rem]">
     <div class="bg-photo">
       <img src="images/profile-photo-edited.jpeg" alt="profile-photo" class="photo">
@@ -23,22 +25,23 @@ import NavBar from '../Components/Navbar.vue';
     display: flex;
     min-height: calc(100vh - 3.375rem);
     .bg-photo{
-    width: 50vw;
-    height: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .photo{
-      max-width: 60%;
-      border: 5px solid white;
-      border-style: double;
-      border-radius: 50%;
-      border-color: #FFAE19;
-    }
+      width: 50vw;
+      height: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .photo{
+        max-width: 70%;
+        border-style: double;
+        border-radius: 50%;
+        padding: 0.5rem;
+        background: linear-gradient(to right, rgba(170,25,255,1) 0%,  rgba(91,12,232,1) 100%);
+      }
     }
     .description{
       width: 50vw;
       p {
+        font-family: arial;
         color: #FFF;
         text-align: justify;
         padding: 0px 2rem 0px;
