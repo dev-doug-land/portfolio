@@ -20,7 +20,7 @@
 </template>
 
 <script setup>
-import NavBar from '../Components/Navbar.vue';
+import NavBar from '@/Pages/Components/Navbar.vue';
 
 </script>
 
@@ -79,13 +79,13 @@ import NavBar from '../Components/Navbar.vue';
         }
 
         #resume-registration{
-            background-image: url(asset('images/resume-registration.png'));
+            background-image: url('/images/resume-registration.png');
             
 
         }
 
         #one-bit-health{
-            background-image: url(asset('images/onebithealth.jpeg'));
+            background-image: url('/images/onebithealth.jpeg');
             &:hover{
                 width: 100%;
                 transition: width 300ms;
@@ -95,7 +95,7 @@ import NavBar from '../Components/Navbar.vue';
         }
 
         #one-bit-camera{
-            background-image: url(asset('images/camera.jpeg'));
+            background-image: url('/images/camera.jpeg');
             &:hover{
                 width: 100%;
                 transition: width 300ms;
@@ -105,7 +105,7 @@ import NavBar from '../Components/Navbar.vue';
         }
 
         #cake-blog{
-            background-image: url(asset('images/blogcake.jpeg'));
+            background-image: url('/images/blogcake.jpeg');
         }
     }
 
