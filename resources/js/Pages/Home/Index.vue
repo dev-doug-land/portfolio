@@ -1,6 +1,6 @@
 <script setup>
 import { Link } from '@inertiajs/vue3';
-import Compass from '../Components/Compass.vue';
+import Compass from '@/Pages/Components/Compass.vue';
 
 // // watch works directly on a ref
 // watch(question, async (newQuestion, oldQuestion) => {

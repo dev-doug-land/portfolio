@@ -21,7 +21,6 @@
 
 <script setup>
 import NavBar from '../Components/Navbar.vue';
-import { Link } from '@inertiajs/vue3';
 
 </script>
 
@@ -80,13 +79,13 @@ import { Link } from '@inertiajs/vue3';
         }
 
         #resume-registration{
-            background-image: url('images/resume-registration.png');
+            background-image: url(asset('images/resume-registration.png'));
             
 
         }
 
         #one-bit-health{
-            background-image: url('images/onebithealth.jpeg');
+            background-image: url(asset('images/onebithealth.jpeg'));
             &:hover{
                 width: 100%;
                 transition: width 300ms;
@@ -96,7 +95,7 @@ import { Link } from '@inertiajs/vue3';
         }
 
         #one-bit-camera{
-            background-image: url('images/camera.jpeg');
+            background-image: url(asset('images/camera.jpeg'));
             &:hover{
                 width: 100%;
                 transition: width 300ms;
@@ -106,7 +105,7 @@ import { Link } from '@inertiajs/vue3';
         }
 
         #cake-blog{
-            background-image: url('images/blogcake.jpeg');
+            background-image: url(asset('images/blogcake.jpeg'));
         }
     }
 
