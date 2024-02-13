@@ -1,6 +1,5 @@
 <script setup>
-  import anime from 'animejs';
-  import { onMounted, ref} from 'vue';
+  import { onMounted } from 'vue';
 
 
   function followMouseCursor(){
@@ -30,11 +29,8 @@
   //     }, 2000);
   // }
 
-  onMounted(() => {
-    // setTimeout(() => {
-      
+  onMounted(() => {      
       followMouseCursor();
-    // }, 2000);
   })
 </script>
 
