@@ -1,7 +1,6 @@
 import { defineConfig } from 'vite';
 import vue from "@vitejs/plugin-vue";
 import laravel from 'laravel-vite-plugin';
-import svgPlugin from 'vite-plugin-svg'
 
 
 export default defineConfig({
@@ -29,7 +28,6 @@ export default defineConfig({
             ssr: 'resources/js/ssr.js',
             refresh: true,
         }),
-        svgPlugin(),
 
     ],
 });

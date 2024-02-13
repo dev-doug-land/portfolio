@@ -41,7 +41,7 @@
 <template>
   <div>
     <div id="background" class="flex justify-center items-center">
-      <img id="compass" :src="asset('images/compass.svg')" alt="Compass image">
+      <img id="compass" src="images/compass.svg" alt="Compass image">
       <div id="needle">
         <!-- i need create the needle with css border -->
         <div id="red-tip"></div>
