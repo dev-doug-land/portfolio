@@ -4,7 +4,7 @@
   <NavBar />
   <div class="content flex justify-around items-center relative top-[3.375rem]">
     <div class="bg-photo">
-      <img :src="asset('images/profile-photo-edited.jpeg')" alt="profile-photo" class="photo">
+      <img src="images/profile-photo-edited.jpeg" alt="profile-photo" class="photo">
     </div>
     <div class="description">
       <p>
