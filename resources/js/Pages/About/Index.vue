@@ -45,7 +45,7 @@ import NavBar from '../Components/Navbar.vue';
         color: #FFF;
         text-align: justify;
         padding: 0px 2rem 0px;
-        text-shadow: 2px 2px rgba(173, 173, 173, 0.6);
+        // text-shadow: 2px 2px rgba(173, 173, 173, 0.6);
       }
     }
   }

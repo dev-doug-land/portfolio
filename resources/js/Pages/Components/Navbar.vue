@@ -1,6 +1,7 @@
 <script setup>
     import { Link } from "@inertiajs/vue3";
     import {onMounted} from 'vue';
+    import { isMobile } from '@/app.js';
 
     onMounted(() => {
         console.log(window.innerWidth);
@@ -8,7 +9,7 @@
 </script>
 
 <template>
-    <nav v-if="typeof window !== 'undefined' && window.innerWidth > 768" class="md:px-16 sm:px-8 flex justify-between w-[100vw] max-h-[3.375rem]">
+    <nav v-if="!isMobile()" class="md:px-16 sm:px-8 flex justify-between w-[100vw] max-h-[3.375rem]">
         <Link :href="'/home'" class="flex justify-center w-[15vw] min-w-[230px] transition rounded-lg hover:scale-110 hover:bg-[#806533] duration-300 hover:translate-y-2 " >
             <img src="images/logo.png" class="hover:invert max-w-[158px] min-w-[158px] max-h-[53px] min-h-[53px]" alt="Logo site">
         </Link>

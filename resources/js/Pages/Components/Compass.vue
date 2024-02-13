@@ -1,5 +1,6 @@
 <script setup>
   import { onMounted } from 'vue';
+  import { isMobile } from '@/app.js';
 
 
   function followMouseCursor(){
@@ -29,27 +30,27 @@
   //     }, 2000);
   // }
 
-  onMounted(() => {      
-      followMouseCursor();
+  onMounted(() => { 
+    if (!isMobile()) {
+      followMouseCursor(); 
+    }
   })
 </script>
 
 <template>
-  <div>
-    <div id="background" class="flex justify-center items-center">
-      <img id="compass" src="images/compass.svg" alt="Compass image">
-      <div id="needle">
-        <!-- i need create the needle with css border -->
-        <div id="red-tip"></div>
-        <div id="black-tip"></div>
-      </div>
+  <div v-if="!isMobile()" class="flex justify-center items-center">
+    <img id="compass" src="images/compass.svg" alt="Compass image">
+    <div id="needle">
+      <!-- i need create the needle with css border -->
+      <div id="red-tip"></div>
+      <div id="black-tip"></div>
     </div>
   </div>
 </template>
 
-
-
 <style lang="scss" scoped>
+
+
     #background{
       position: relative;
       margin: 0;
