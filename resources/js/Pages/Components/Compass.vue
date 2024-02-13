@@ -31,10 +31,10 @@
   // }
 
   onMounted(() => {
-    setTimeout(() => {
+    // setTimeout(() => {
       
       followMouseCursor();
-    }, 2000);
+    // }, 2000);
   })
 </script>
 
