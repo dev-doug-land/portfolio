@@ -34,7 +34,7 @@
     setTimeout(() => {
       
       followMouseCursor();
-    }, 800);
+    }, 2000);
   })
 </script>
 
