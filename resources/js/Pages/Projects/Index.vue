@@ -1,6 +1,6 @@
 <template>
     <NavBar />
-    <div class="flex justify-between items-center content relative top-[3.375rem] gap-x-[2.5rem]">
+    <div class="flex justify-between flex-col md:flex-row gap-y-5 md:gap-x-[2.5rem] items-center content relative top-[3.375rem] ">
         <a href="https://github.com/BigCouve/resume-registration" target="_blank" id="resume-registration" class="project"> 
             <p> Resume Registration </p>
         </a>
@@ -29,6 +29,7 @@ import NavBar from '@/Pages/Components/Navbar.vue';
     .content{
         height: calc(100vh - 3.375rem);
         .project{
+
             .line{
                 margin: 0;
                 padding: 0;
@@ -42,7 +43,7 @@ import NavBar from '@/Pages/Components/Navbar.vue';
                 font-weight: bold;
                 font-family: 'Cambria';
                 text-transform: uppercase;
-                text-shadow: 2px 2px #0E1623;
+                // text-shadow: 2px 2px #0E1623;
                 text-align: center;
                 background-color: hsl(217, 46%, 52%, 0.5);
                 padding: 0.5rem 1rem;
@@ -75,7 +76,9 @@ import NavBar from '@/Pages/Components/Navbar.vue';
                     100% {width: 100%;}
                 }
             }
-            
+            @media (min-width: 200px) and (max-width: 768px) {
+                width: 100%;
+            }            
         }
 
         #resume-registration{

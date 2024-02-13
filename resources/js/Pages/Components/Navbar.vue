@@ -1,9 +1,14 @@
 <script setup>
     import { Link } from "@inertiajs/vue3";
+    import {onMounted} from 'vue';
+
+    onMounted(() => {
+        console.log(window.innerWidth);
+    });
 </script>
 
 <template>
-    <nav class="md:px-16 sm:px-8 flex justify-between w-[100vw] max-h-[3.375rem]">
+    <nav v-if="typeof window !== 'undefined' && window.innerWidth > 768" class="md:px-16 sm:px-8 flex justify-between w-[100vw] max-h-[3.375rem]">
         <Link :href="'/home'" class="flex justify-center w-[15vw] min-w-[230px] transition rounded-lg hover:scale-110 hover:bg-[#806533] duration-300 hover:translate-y-2 " >
             <img src="images/logo.png" class="hover:invert max-w-[158px] min-w-[158px] max-h-[53px] min-h-[53px]" alt="Logo site">
         </Link>
@@ -13,6 +18,12 @@
             <Link as="a" class="px-2 flex justify-center items-center hover:scale-110 rounded shadow-inner hover:shadow-lg drop-shadow-2xl max-w-sm text-base hover:text-[#2D19FF] hover:shadow-[#2D19FF]" :href="'/skills'">Skills</Link>
             <Link as="a" class="px-2 flex justify-center items-center hover:scale-110 rounded shadow-inner hover:shadow-lg drop-shadow-2xl max-w-sm text-base hover:text-[#2D19FF] hover:shadow-[#2D19FF]" :href="'/contact'">Contact</Link>
         </ul>
+    </nav>
+    <nav v-else class="md:px-16 sm:px-8 flex justify-between w-[100vw] max-h-[3.375rem]"> 
+        <Link :href="'/home'" class="flex justify-center w-[15vw] min-w-[230px] transition rounded-lg hover:scale-110 hover:bg-[#806533] duration-300 hover:translate-y-2 " >
+            <img src="images/logo.png" class="hover:invert max-w-[158px] min-w-[158px] max-h-[53px] min-h-[53px]" alt="Logo site">
+        </Link>
+        teste navbarmovel
     </nav>
 </template>
 
