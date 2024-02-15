@@ -4,19 +4,6 @@
 
 
   function followMouseCursor(){
-    // let needle = document.querySelector("#needle");
-    // let background = document.querySelector("#background");
-    
-    // background.addEventListener("mousemove", e => {
-    //     let backgroundBoundingRect = background.getBoundingClientRect();
-    //     let backgroundCenter = {
-    //         x: backgroundBoundingRect.left + backgroundBoundingRect.width / 2,
-    //         y: backgroundBoundingRect.top + backgroundBoundingRect.height / 2
-    //     };
-
-    //     let angle = Math.atan2(e.clientX - backgroundCenter.x, - (e.clientY - backgroundCenter.y)) * (180 / Math.PI);
-    //     needle.style.transform = `translate(-50%, -50%) rotate(${angle}deg)`;  
-    // })
     let needle = document.querySelector("#needle");
     
     document.addEventListener("mousemove", e => {
@@ -30,19 +17,6 @@
     })
   }
 
-  // function showInConsole(e){
-  //     // anime({
-  //     //   targets: '#compass',
-  //     //   rotate: 5,
-  //     //   scale: 1,
-  //     //   loop: true,
-  //     // });
-  //     setTimeout(() => {
-  //         console.log(e.clientX, e.clientY);
-          
-  //     }, 2000);
-  // }
-
   onMounted(() => { 
     if (!isMobile()) {
       followMouseCursor(); 
@@ -54,7 +28,6 @@
   <div v-if="!isMobile()" id="background" class="flex justify-center items-center">
     <img id="compass" src="images/compass.svg" alt="Compass image">
     <div id="needle">
-      <!-- i need create the needle with css border -->
       <div id="red-tip"></div>
       <div id="black-tip"></div>
     </div>
@@ -83,15 +56,6 @@
         top: 50%;
         left: 51.5%;
         transform: translate(-53%, -50%);
-        // left: calc(12rem / 2 - 0.4rem);
-        // left: 50%;
-        // top: 50%;
-        // transform: translate(-50%,-50%);
-        // left: 46.5%;
-        // transform: translate(-46.5%, -12.8%);
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
         #red-tip{
           width: 0;
           height: 0;
