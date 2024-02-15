@@ -4,7 +4,7 @@
   <NavBar />
   <div class="content flex justify-around items-center relative top-[3.375rem]">
     <div class="bg-photo">
-      <img :src="asset('images/profile-photo-edited.jpeg')" alt="profile-photo" class="photo">
+      <img src="images/profile-photo-edited.jpeg" alt="profile-photo" class="photo">
     </div>
     <div class="description">
       <p>
@@ -45,7 +45,7 @@ import NavBar from '../Components/Navbar.vue';
         color: #FFF;
         text-align: justify;
         padding: 0px 2rem 0px;
-        text-shadow: 2px 2px rgba(173, 173, 173, 0.6);
+        // text-shadow: 2px 2px rgba(173, 173, 173, 0.6);
       }
     }
   }
