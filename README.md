@@ -1,25 +1,29 @@
-# Portfolio
+# portfolio
 
-This portfolio is using LIVT (Laravel, InertiaJS, Vue.JS, TailwindCSS), in addiction other technologies, such as: AnimeJS, advanced CSS.
+This template should help get you started developing with Vue 3 in Vite.
 
-To test it:
+## Recommended IDE Setup
 
-1. Rename the file '.env.example' to '.env' and configure database connection with your credentials inside it. For example: <br> <br>
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
-    DB_CONNECTION=mysql <br>
-    DB_HOST=127.0.0.1 <br>
-    DB_PORT=3306 <br>
-    DB_DATABASE=dbname <br>
-    DB_USERNAME=username <br>
-    DB_PASSWORD="123" <br>
+## Customize configuration
 
-execute those commands:
+See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-> composer update <br>
-> php artisan key:generate <br>
-> php artisan serve <br>
-> npm install <br>
-> npm run dev <br>
+## Project Setup
 
+```sh
+npm install
+```
 
-So, the project will be available on http://localhost:8000/
+### Compile and Hot-Reload for Development
+
+```sh
+npm run dev
+```
+
+### Compile and Minify for Production
+
+```sh
+npm run build
+```
