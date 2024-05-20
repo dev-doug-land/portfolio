@@ -26,7 +26,7 @@
 
 <template>
   <div v-if="!isMobile()" id="background" class="flex justify-center items-center">
-    <img id="compass" src="images/compass.svg" alt="Compass image">
+    <img id="compass" src="/images/compass.svg" alt="Compass image">
     <div id="needle">
       <div id="red-tip"></div>
       <div id="black-tip"></div>

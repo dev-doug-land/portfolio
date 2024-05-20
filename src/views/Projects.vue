@@ -6,26 +6,26 @@ import NavBar from '@/views/Components/Navbar.vue';
 <template>
     <NavBar />
     <div class="flex justify-between flex-col md:flex-row gap-y-5 md:gap-x-[2.5rem] items-center content relative top-[3.375rem] ">
-        <a href="https://github.com/BigCouve/resume-registration" target="_blank" id="resume-registration" class="project"> 
+        <a href="https:/github.com/BigCouve/resume-registration" target="_blank" id="resume-registration" class="project"> 
             <p> Resume Registration </p>
         </a>
         <div class="line"></div>
-        <a href="https://github.com/BigCouve/onebithealth" target="_blank" id="one-bit-health" class="project"> 
+        <a href="https:/github.com/BigCouve/onebithealth" target="_blank" id="one-bit-health" class="project"> 
             <p> One Bit Health </p>
         </a>
         <div class="line"></div>
-        <a href="https://github.com/BigCouve/smartphonecamera" target="_blank" id="one-bit-camera" class="project">
+        <a href="https:/github.com/BigCouve/smartphonecamera" target="_blank" id="one-bit-camera" class="project">
             <p> One Bit Camera </p>
         </a>
         <div class="line"></div>
-        <a href="https://github.com/BigCouve/blog-in-cakephp" target="_blank" id="cake-blog" class="project">
+        <a href="https:/github.com/BigCouve/blog-in-cakephp" target="_blank" id="cake-blog" class="project">
             <p> Cake Blog </p>
         </a>
     </div>
 </template>
 
 <style lang="scss" scoped>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+    @import url('https:/fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
     .content{
         height: calc(100vh - 3.375rem);
         .project{
@@ -83,8 +83,6 @@ import NavBar from '@/views/Components/Navbar.vue';
 
         #resume-registration{
             background-image: url('/images/resume-registration.png');
-            
-
         }
 
         #one-bit-health{

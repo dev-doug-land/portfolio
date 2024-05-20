@@ -1,8 +1,8 @@
 <script setup>
+    import router from '@/router';
     import anime from 'animejs/lib/anime.es.js';  
     import { onMounted } from 'vue';
-    // import { router } from '@inertiajs/vue3'
-
+    
     let message = 'Welcome To My Portfolio';
     
     message = message.replace(/\S/g, "<span>$&</span>");    
@@ -27,7 +27,7 @@
             duration: 1500,
             delay: anime.stagger(100),
             complete: (anim) => {
-                // router.get('/home');
+                router.push({ name: 'home' });
             }
         })
     })   
