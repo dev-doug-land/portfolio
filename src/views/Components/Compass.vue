@@ -44,12 +44,10 @@
       max-width: 25vw;
       #compass{
         max-width: 100%;
-        border-width: 1px;
         border-radius: 50%;
-        border-color: #fff;
-        // padding: 1rem;
-        background-color: #fff;
-  
+        background-color: rgba(255, 255, 255, 0.3);
+        border: none;
+        padding: 10px;
       }
       #needle{
         position: absolute;
